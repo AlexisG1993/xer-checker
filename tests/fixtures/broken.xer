@@ -1,0 +1,27 @@
+ERMHDR	19.12	2026-11-10	Project	admin
+%T	PROJECT
+%F	proj_id	proj_short_name	last_recalc_date
+%R	1	DEMO	2026-11-01 00:00
+%T	CALENDAR
+%F	clndr_id	clndr_name	day_hr_cnt
+%R	1	Standard	8
+%T	TASK
+%F	task_id	proj_id	clndr_id	status_code	task_type	task_code	task_name	total_float_hr_cnt	early_start_date	driving_path_flag
+%R	10	1	1	TK_NotStart	TT_Mile	A10	Start	0	2026-11-02 08:00	Y
+%R	20	1	1	TK_NotStart	TT_Task	A20	Linked, behind	-40	2026-11-02 08:00	Y
+%R	30	1	1	TK_NotStart	TT_Task	A30	No links at all	16	2026-11-03 08:00	N
+%R	40	1	1	TK_NotStart	TT_Task	A40	Lots of float	400	2026-11-04 08:00	N
+%R	50	1	1	TK_NotStart	TT_Task	A50	Bad float	abc	2026-11-04 08:00	N
+%R	60	1	1	TK_NotStart	TT_Task	A60	Bad date	8	next tuesday	N
+%R	70	1	9	TK_NotStart	TT_Task	A70	Unknown calendar	8	2026-11-04 08:00	N
+%R	80	1	1	TK_NotStart	TT_Task	A80	Too few columns
+%R	90	1	1	TK_NotStart	TT_FinMile	A90	Finish	0	2026-12-01 08:00	Y
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	pred_type	lag_hr_cnt
+%R	1	20	10	PR_FS	0
+%R	2	40	20	PR_FS	0
+%R	3	50	40	PR_FS	0
+%R	4	60	50	PR_FS	0
+%R	5	70	60	PR_FS	0
+%R	6	90	70	PR_FS	0
+%R	7	90	999	PR_FS	0

@@ -1,0 +1,10 @@
+﻿check,line,activity_or_row,name,detail,float_days
+Broken row,14,A50,TASK,Total float is not a number: 'abc',
+Broken row,15,A60,TASK,early_start_date is not a valid date: 'next tuesday',
+Broken row,16,A70,TASK,Calendar 9 is not in the CALENDAR table,
+Broken row,17,80,TASK,Row has 7 values but the table header has 10,
+Broken row,27,7,TASKPRED,Link points to a predecessor (999) that is not in this file,
+Broken row,,,,No %E end marker: the file may be cut off,
+Missing links,,A30,No links at all,No predecessor and no successor,
+Negative float,,A20,"Linked, behind",-5.0 working days behind,-5.0
+High float,,A40,Lots of float,50.0 working days of float,50.0
